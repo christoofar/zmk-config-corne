@@ -115,34 +115,34 @@
 	};
 	combo_DOUBLEQUOTE {
 	    timeout-ms = <50>;
-	    key-positions = <15 10>;
+	    key-positions = <13 8>;
 	    bindings = <&kp DOUBLE_QUOTES>;
 	};
         combo_HOME {
             timeout-ms = <50>;
-            key-positions = <7 8 9>;
+            key-positions = <5 6 7>;
             bindings = <&kp HOME>;
         };
         combo_END {
             timeout-ms = <70>;
-            key-positions = <32 33 34>;
+            key-positions = <30 31 32>;
             bindings = <&kp END>;
         };
 	combo_RUBOUT {
 	    timeout-ms = <45>;
-	    key-positions = <18 19>;
+	    key-positions = <16 17>;
 	    bindings = <&kp LC(BSPC)>;
 	};
 	combo_BACKSPACE {
 	    timeout-ms = <45>;
-	    key-positions = <20 21>;
+	    key-positions = <18 19>;
 	    bindings = <&kp BSPC>;
 	};
         combo_RGUI {
 	    // This is a quick way to strike the Compose key
 	    // (when the Compose key is mapped to RGUI
             timeout-ms = <50>;
-            key-positions = <15 16 17 18>;
+            key-positions = <13 14 15 16>;
             bindings = <&kp RGUI>;
         };	
     };
