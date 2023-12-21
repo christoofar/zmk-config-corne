@@ -8,6 +8,147 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+&lt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <200>; };
+
+/ {
+    macros {
+        zed_alt_tab: zed_alt_tab {
+            label = "ZM_zed_alt_tab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        zed_rub_out: zed_rub_out {
+            label = "ZM_zed_rub_out";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp BSPC>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        zed_assignment: zed_assignment {
+            label = "ZM_zed_assignment";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp COLON>
+                , <&macro_tap &kp EQUAL>
+                ;
+        };		
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_EQUAL {
+            timeout-ms = <45>;
+            key-positions = <2 11>;
+            bindings = <&kp EQUAL>;
+        };
+        combo_ASSIGNMENT {
+            timeout-ms = <45>;
+            key-positions = <4 9>;
+            bindings = <&zed_assignment>;
+        };
+        combo_LPAR {
+            timeout-ms = <71>;
+            key-positions = <2 15>;
+            bindings = <&kp LPAR>;
+        };
+        combo_RPAR {
+            timeout-ms = <71>;
+            key-positions = <8 21>;
+            bindings = <&kp RPAR>;
+        };
+        combo_LCURLY {
+            timeout-ms = <71>;
+            key-positions = <5 18>;
+            bindings = <&kp LEFT_BRACE>;
+        };
+        combo_RCURLY {
+            timeout-ms = <71>;
+            key-positions = <11 24>;
+            bindings = <&kp RIGHT_BRACE>;
+        };
+        combo_LBRACKET {
+            timeout-ms = <71>;
+            key-positions = <4 17>;
+            bindings = <&kp LEFT_BRACKET>;
+        };	
+        combo_RBRACKET {
+            timeout-ms = <71>;
+            key-positions = <10 23>;
+            bindings = <&kp RIGHT_BRACKET>;
+        };
+	combo_LESSTHAN {
+	    timeout-ms = <71>;
+	    key-positions = <3 16>;
+	    bindings = <&kp LESS_THAN>;
+	};
+	combo_GREATERTHAN {
+	    timeout-ms = <71>;
+	    key-positions = <9 22>;
+	    bindings = <&kp GREATER_THAN>;
+	};
+        combo_PAGEUP {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp PAGE_UP>;
+        }; 
+        combo_PAGEDOWN {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp PAGE_DOWN>;
+        };
+	combo_QUOTE {
+	    timeout-ms = <50>;
+	    key-positions = <15 9>;
+	    bindings = <&kp SINGLE_QUOTE>;
+	};
+	combo_DOUBLEQUOTE {
+	    timeout-ms = <50>;
+	    key-positions = <15 10>;
+	    bindings = <&kp DOUBLE_QUOTES>;
+	};
+        combo_HOME {
+            timeout-ms = <50>;
+            key-positions = <7 8 9>;
+            bindings = <&kp HOME>;
+        };
+        combo_END {
+            timeout-ms = <70>;
+            key-positions = <32 33 34>;
+            bindings = <&kp END>;
+        };
+	combo_RUBOUT {
+	    timeout-ms = <45>;
+	    key-positions = <18 19>;
+	    bindings = <&kp LC(BSPC)>;
+	};
+	combo_BACKSPACE {
+	    timeout-ms = <45>;
+	    key-positions = <20 21>;
+	    bindings = <&kp BSPC>;
+	};
+        combo_RGUI {
+	    // This is a quick way to strike the Compose key
+	    // (when the Compose key is mapped to RGUI
+            timeout-ms = <50>;
+            key-positions = <15 16 17 18>;
+            bindings = <&kp RGUI>;
+        };	
+    };
+};
+
+
 / {
         keymap {
                 compatible = "zmk,keymap";
