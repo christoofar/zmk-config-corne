@@ -50,67 +50,67 @@
         compatible = "zmk,combos";
         combo_EQUAL {
             timeout-ms = <45>;
-            key-positions = <2 11>;
+            key-positions = <0 9>;
             bindings = <&kp EQUAL>;
         };
         combo_ASSIGNMENT {
             timeout-ms = <45>;
-            key-positions = <4 9>;
+            key-positions = <2 7>;
             bindings = <&zed_assignment>;
         };
         combo_LPAR {
             timeout-ms = <71>;
-            key-positions = <2 15>;
+            key-positions = <0 13>;
             bindings = <&kp LPAR>;
         };
         combo_RPAR {
             timeout-ms = <71>;
-            key-positions = <8 21>;
+            key-positions = <6 19>;
             bindings = <&kp RPAR>;
         };
         combo_LCURLY {
             timeout-ms = <71>;
-            key-positions = <5 18>;
+            key-positions = <6 16>;
             bindings = <&kp LEFT_BRACE>;
         };
         combo_RCURLY {
             timeout-ms = <71>;
-            key-positions = <11 24>;
+            key-positions = <9 22>;
             bindings = <&kp RIGHT_BRACE>;
         };
         combo_LBRACKET {
             timeout-ms = <71>;
-            key-positions = <4 17>;
+            key-positions = <2 15>;
             bindings = <&kp LEFT_BRACKET>;
         };	
         combo_RBRACKET {
             timeout-ms = <71>;
-            key-positions = <10 23>;
+            key-positions = <8 21>;
             bindings = <&kp RIGHT_BRACKET>;
         };
 	combo_LESSTHAN {
 	    timeout-ms = <71>;
-	    key-positions = <3 16>;
+	    key-positions = <1 15>;
 	    bindings = <&kp LESS_THAN>;
 	};
 	combo_GREATERTHAN {
 	    timeout-ms = <71>;
-	    key-positions = <9 22>;
+	    key-positions = <7 20>;
 	    bindings = <&kp GREATER_THAN>;
 	};
         combo_PAGEUP {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <5 6>;
             bindings = <&kp PAGE_UP>;
         }; 
         combo_PAGEDOWN {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <30 31>;
             bindings = <&kp PAGE_DOWN>;
         };
 	combo_QUOTE {
 	    timeout-ms = <50>;
-	    key-positions = <15 9>;
+	    key-positions = <13 7>;
 	    bindings = <&kp SINGLE_QUOTE>;
 	};
 	combo_DOUBLEQUOTE {
