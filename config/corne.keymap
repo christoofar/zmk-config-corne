@@ -179,6 +179,17 @@
             key-positions = <13 14 15 16>;
             bindings = <&kp RGUI>;
         };
+
+        combo_mouseleft {
+            bindings = <&mkp MB1>;
+            key-positions = <29 28>;
+            layers = <0>;
+        };
+
+        combo_mouseright {
+            bindings = <&mkp MB2>;
+            key-positions = <28 27>;
+        };
     };
 };
 
