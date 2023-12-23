@@ -14,6 +14,10 @@
 #define ADJ 3
 #define NAV 4
 
+&mt {
+    tapping-term-ms = <300>;
+};
+
 &lt {
     quick_tap_ms = <200>;
 };
