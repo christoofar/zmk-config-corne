@@ -54,7 +54,7 @@
             label = "ZM_zed_assignment";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp COLON>, <&macro_tap>, <&kp EQUAL>;
+            bindings = <&macro_tap>, <&kp COLON>, <&macro_tap>, <&kp EQUAL>, <&kp SPACE>;
         };
     };
 };
