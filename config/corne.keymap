@@ -63,7 +63,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_PROGRAM = {
+        combo_PROGRAM {
             timeout-ms = <45>;
             key-positions = <4 6>;
             bindings = <&kp P>, <&kp R>, <&kp O>, <&kp G>, <&kp R>, <&kp A>, <&kp M>, <&kp SPACE>;
