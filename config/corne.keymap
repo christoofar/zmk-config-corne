@@ -66,7 +66,7 @@
         combo_program = {
             timeout-ms = <45>;
             key-positions = <4 6>;
-            bindings = <&kp P>, <&kp R>, <&kp O>, <&kp G>, <&kp R>, <&kp A>, <&kp M>;
+            bindings = <&kp P>, <&kp R>, <&kp O>, <&kp G>, <&kp R>, <&kp A>, <&kp M>, <&kp SPACE>;
         };
 
         combo_EQUAL {
